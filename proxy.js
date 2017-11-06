@@ -9,7 +9,7 @@ app.use(
 		changeOrigin: true,
 		// 修改响应头信息，实现跨域并允许带cookie
 	    onProxyRes: function(proxyRes, req, res) {
-	        res.header('Access-Control-Allow-Origin', 'http://127.0.0.1');
+	        res.header('Access-Control-Allow-Origin', 'http://127.0.0.1:8080');
 	        res.header('Access-Control-Allow-Credentials', 'true');
 	    },
 	    // 修改响应信息中的cookie域名
